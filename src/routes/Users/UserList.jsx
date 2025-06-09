@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 
 export default function ProductList() {
-    const users = [
-        { id: 1, role: "Oquvchi", path: '/oquvchi' },
-        { id: 2, role: "Oqituvchi", path: '/oqituvchi' },
-    ];
+const users = [
+  { id: 1, role: "Oquvchi", path: '/users/oquvchi' },
+  { id: 2, role: "Oqituvchi", path: '/users/oqituvchi' },
+];
+
 
     return (
         <ul>
