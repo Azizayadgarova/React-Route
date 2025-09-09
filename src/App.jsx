@@ -1,9 +1,14 @@
-import React from 'react'
+
+import React from 'react';
+import User from './User';
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+   
+    <User/>
+    </div>
+  );
+};
 
-export default App
+export default App;
