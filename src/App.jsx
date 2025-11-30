@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import useLocalStorage from "./hooks/useLocalStorage";
 
-const App = () => {
+
+export default function UserComponent() {
+  const [user, setUser] = useLocalStorage("user", "bor");
+
   return (
-    <div>App</div>
-  )
+    <div>
+      <h1>User: {user}</h1>
+      <button onClick={() => setUser("Aziza")}>Set Aziza</button>
+      <button onClick={() => setUser("Dilshod")}>Set Dilshod</button>
+    </div>
+  );
 }
-
-export default App
